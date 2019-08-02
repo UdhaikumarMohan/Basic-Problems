@@ -2,11 +2,21 @@
 
 # Base and Height are the Parameters Belong to the Triangle:
 
-Base=input("Enter the Base of the Triangle: ")
-Height=input("Enter the Height of the Triangle: ")
+Base=float(input("Enter the Base of the Triangle: "))
+Height=float(input("Enter the Height of the Triangle: "))
 
 # Area of the Triangle is 1/2(Base*Height). In meters
 
-Area= (Base*Height)/2
+def area_triangle(Base,Height):
 
-print Area
+    if Base>0 or Height>0:
+
+        Area= (Base*Height)/2
+
+    else:
+
+        Area = "Invalid Measurements"
+
+    return (Area)
+
+print("The Area of Triangle is", area_triangle(Base,Height))

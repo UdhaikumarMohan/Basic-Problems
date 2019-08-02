@@ -1,8 +1,11 @@
 # Phython Programs for addition of two numbers
 
-A=input("Enter the Number: ")
-B=input("Enter the Number: ")
+A=float(input("Enter the Number: "))
+B=float(input("Enter the Number: ")) 
 
-Addition = A+B
+def add(A,B):
+    Addition = A+B
 
-print Addition
+    return(Addition)
+
+print(add(A,B))

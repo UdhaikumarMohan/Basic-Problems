@@ -1,7 +1,15 @@
 #Python Program to find the square root.
 
-A=input("Enter the Vale: ")
+import math
 
-Sqrt=A**0.5
+A=int(input("Enter the Vale: "))
 
-print Sqrt
+if A<=0:
+
+    print("Invalid Number")
+
+else:    
+
+    Sqroot=math.sqrt(A)
+
+    print(Sqroot)

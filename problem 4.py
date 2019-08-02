@@ -8,25 +8,27 @@
 
 #Take the coefficients of X from the Users.
 
-import math
 
-A=input("Enter the Co-efficient of X**2: ")
+def quadratic(A,B,C):
 
-B=input("Enter the Co-efficient of X: ")
+    # Solution 1
 
-C=input("Enter the Constant: ")
+    X1= -B-((B**2-4*A*C)**(1/2))/2*A
 
-# Solution 1
+    # Solution 2
 
-X1= -B-(B**2-4*A*C)**(1/2)/2*A
+    X2= -B+((B**2-4*A*C)**(1/2))/2*A
 
-# Solution 2
+    print ("Solution 1",X1)
 
-X2= -B+(B**2-4*A*C)**(1/2)/2*A
+    print ("Solutuin 2",X2)
 
-print ("Solution 1",X1)
 
-print ("Solutuin 2",X2)
+A=int(input("Enter the Co-efficient of X**2: "))
+B=int(input("Enter the Co-efficient of X: "))
+C=int(input("Enter the Constant: "))
+
+quadratic(A,B,C)
 
 
 
