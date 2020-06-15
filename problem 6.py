@@ -1,10 +1,12 @@
-# Python Program to Swap Two Variables without using temporary variable:
+# Swap Two Variables without using temporary variable:
 
-def swap_temp(A,B):
+def swap(a,b):
 
-    A,B = B,A
-    print(A,B)
+    a,b=b,a
 
-A = 5
-B = 6
-swap_temp(A,B)
+    print(a)
+    print(b)
+
+a = 6
+b = 5
+swap(a,b)

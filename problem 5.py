@@ -1,18 +1,18 @@
-# Python Program to Swap Two Variables
+# Python Program to Swap Two Variables:
 
-def swap(A,B):
+def swap(a,b):
 
-    temp = B
+    temp = a
 
-    B = A
+    a = b
 
-    A = temp
+    b = temp
 
-    print(A,B)
+    print (a)
 
+    print (b)
 
-A = 5
+a = 5
+b = 6
 
-B = 6
-
-swap(A,B)
+swap(a,b)

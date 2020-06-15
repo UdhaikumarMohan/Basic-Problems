@@ -1,11 +1,15 @@
-import random
+# Swap Two Variables without causing overflow:
 
-def random_(n):
+def swap(a,b):
 
-    x = random.randint(0,n)
+    a = a ^ b
+    b = b ^ a
+    a = a ^ b
 
-    return x
+    print(a)
+    print(b)
 
-n = 10
+a = 6
+b = 5
 
-print (random_(n))
+swap(a,b)
