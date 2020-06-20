@@ -6,3 +6,13 @@ def Odd_even(Num):
 
         result = "It is an even number"
 
+    else: 
+
+        result = "It is not an even number"
+
+    return result
+
+# Input
+
+Num = int(input("Enter the number: "))
+print(Odd_even(Num))
